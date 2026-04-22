@@ -38,5 +38,4 @@ test_text = tokenize(test_text)
 test_vec = vectorizer.transform([test_text])
 
 prediction = model.predict(test_vec)
-
 print("预测结果:", "正面" if prediction[0] == 1 else "负面")
